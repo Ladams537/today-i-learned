@@ -160,4 +160,3 @@ impl Animal for Dog { // Explicit linkage
 - **Model:** 1:1 mapping to Operating System threads (```std::thread```) OR State Machine futures (Async/Tokio)
 - **Cost:** OS threads are heavy (context switching). Async is zero-cost at runtime but complex to write
 - **Safety:** Rust guarantees thread safety at compile time using the ```Send``` and ```Sync``` traits. If you have a data race, the code won't compile
-
